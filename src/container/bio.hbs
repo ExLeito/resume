@@ -1,0 +1,124 @@
+<div>
+    <h1>Albert Einstein</h1>
+</div>
+<div>
+    Borne <em>March 14, 1879 in Ulm, Kingdom of Württemberg, German Empire</em>
+</div>
+<div>
+    Die <em>April 18, 1955 in Princeton, New Jersey, United States</em>
+</div>
+<div>
+    Nationality - Swiss, German, American
+</div>
+<br>
+<hr>
+<div>
+    <b>Occupation:</b> Theoretical Physicist
+</div>
+<div>
+    <b>Known for:</b>
+</div>
+<div>
+    {{#each known_for}}
+    <ul>
+        {{this}}
+    </ul>
+    {{/each}}
+</div>
+<div>
+    <b>Education:</b>
+    {{#each education}}
+    <div>degree: {{degree}}</div>
+    <div>field: {{field}}</div>
+    <div>institution: {{institution}}</div>
+    <div> year: {{year}}</div>
+    {{/each}}
+</div>
+<br>
+<div>
+    <b>Notable publications:</b>
+    <ul>
+        {{#each notable_publications}}
+        <li><q>{{title}}</q></li>
+        <li>{{year}}</li>
+        <li><em>{{publisher}}</em></li>
+        {{/each}}
+    </ul>
+</div>
+<br>
+<hr>
+<div>
+    <b>Partners</b>
+    <ul>
+        {{#each partners}}
+        <li>{{name}}</li>
+        <li>{{relationship}}</li>
+        <li>{{years}}</li>
+        {{/each}}
+    </ul>
+</div>
+<br>
+<hr>
+<div>
+    <b>Awards:</b>
+    <ul>
+        {{#each awards}}
+        <em>{{title}}</em>,
+        {{year}},
+        {{description}}
+        {{/each}}
+    </ul>
+</div>
+<br>
+<hr>
+<div>
+    <b>influences:</b>
+    {{#each influences}}
+    <ul>
+        {{this}}
+    </ul>
+    {{/each}}
+</div>
+<br>
+<hr>
+<div>
+    <b>influenced:</b>
+    {{#each influenced}}
+    <ul>
+        {{this}}
+    </ul>
+    {{/each}}
+</div>
+<br>
+<hr>
+<div>
+    <b>quotes:</b>
+    {{#each quotes}}
+    <ul>
+        <q>{{this}}</q>
+    </ul>
+    {{/each}}
+</div>
+<br>
+<hr>
+<div>
+    <b>major discoveries:</b>
+    {{#each major_discoveries}}
+    <ul>
+        <li>{{title}}</li>
+        <li>{{year}}</li>
+        <li>{{description}}</li>
+    </ul>
+    {{/each}}
+</div>
+<br>
+<hr>
+<div>
+    <b>contributions</b>
+    {{#with contributions}}
+    <div>{{title}}</div>
+    <div>{{description}}</div>
+    <div>{{year}}</div>
+    <div>{{field}}</div>
+    {{/with}}
+</div>
